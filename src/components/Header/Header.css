@@ -1,0 +1,6 @@
+.bg {
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        background-image: linear-gradient( rgb(221, 235, 194), rgb(142, 197, 64));
+}
