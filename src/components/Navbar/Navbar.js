@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
         return (
@@ -11,13 +13,37 @@ const Navbar = () => {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                                 <li className="nav-item">
-                                                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                                        <NavLink
+                                                                to="/home"
+                                                                activeStyle={{
+                                                                        fontWeight: "bold",
+                                                                        color: "red"
+                                                                }} className="nav-link active"
+                                                        >
+                                                                Home
+                                                        </NavLink>
                                                 </li>
                                                 <li className="nav-item">
-                                                        <a className="nav-link active" aria-current="page" href="#">Services</a>
+                                                        <NavLink
+                                                                to="/courses"
+                                                                activeStyle={{
+                                                                        fontWeight: "bold",
+                                                                        color: "red"
+                                                                }} className="nav-link active"
+                                                        >
+                                                                Courses
+                                                        </NavLink>
                                                 </li>
                                                 <li className="nav-item">
-                                                        <a className="nav-link active" aria-current="page" href="#">About Us</a>
+                                                        <NavLink
+                                                                to="/about"
+                                                                activeStyle={{
+                                                                        fontWeight: "bold",
+                                                                        color: "red"
+                                                                }} className="nav-link active"
+                                                        >
+                                                                About Us
+                                                        </NavLink>
                                                 </li>
                                         </ul>
                                 </div>

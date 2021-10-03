@@ -30,5 +30,21 @@
                 "duration": "6",
                 "certificate": "yes",
                 "price": 4500
+        },
+        {
+                "id": 5,
+                "title": "Learn Bukhari Sharif with Proper Meaning",
+                "img": "https://images.squarespace-cdn.com/content/v1/5845906b2994ca4e352eb4d9/1540241615883-G1KCECVWQHS9OVJ8OEGE/books-690219.jpg?format=1500w",
+                "duration": "6",
+                "certificate": "yes",
+                "price": 4500
+        },
+        {
+                "id": 6,
+                "title": "Learn Bukhari Sharif with Proper Meaning",
+                "img": "https://images.squarespace-cdn.com/content/v1/5845906b2994ca4e352eb4d9/1540241615883-G1KCECVWQHS9OVJ8OEGE/books-690219.jpg?format=1500w",
+                "duration": "6",
+                "certificate": "yes",
+                "price": 4500
         }
 ]

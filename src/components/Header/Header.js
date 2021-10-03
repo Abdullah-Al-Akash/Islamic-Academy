@@ -9,7 +9,7 @@ const Header = () => {
                                 <img class="img-fluid" src={HeaderImage} alt="" />
                         </div>
                         <div class="d-md-flex align-items-center">
-                                <div class="p-3">
+                                <div class="p-3 w-75">
                                         <h2>
                                                 And Allah Invites To
                                                 The Home Of Peace
