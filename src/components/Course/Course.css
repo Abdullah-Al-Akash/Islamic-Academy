@@ -1,5 +1,5 @@
 .thumbnail img {
-        height: 200px;
+        height: 210px;
         width: 100%;
 }
 
@@ -8,5 +8,5 @@
 }
 
 .card-title {
-        height: 100px;
+        height: 80px;
 }
