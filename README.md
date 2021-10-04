@@ -1,5 +1,5 @@
 # Islamic Academy
-<h3>Live Site: <a href="https://islamic-academy.netlify.app/">Islamic Academy</a></h3>
+<h3>Live Site: <a target="_blank" href="https://islamic-academy.netlify.app/">Islamic Academy</a></h3>
 <h5>Hello!</h5>
 <p>Today I have created a website related Islamic Education. For complete this site I have used some technology and I
         also want to tell what service anyone can get from this website.</p>
