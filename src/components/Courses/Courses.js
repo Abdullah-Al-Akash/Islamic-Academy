@@ -12,8 +12,9 @@ const Courses = () => {
         }, [])
         return (
                 <div className="container">
-                        <h2 className="text-center mt-5 text-success">Our Courses</h2>
-                        <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-5 mx-auto">
+                        <h1 className="text-center our-course">Our Courses</h1>
+                        <h5 class="text-center text-success">“Seek knowledge even if you have to go as far as China”</h5>
+                        <div className="mt-3 pb-5 row row-cols-1 row-cols-md-2 g-5 mx-auto">
                                 {
                                         courses.map(course => <Course
                                                 course={course}

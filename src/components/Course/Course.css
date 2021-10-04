@@ -7,6 +7,14 @@
         box-shadow: 3px 3px 10px lightgray;
 }
 
+.course-card:hover {
+        transform: scale(1.03);
+        transition: transform 1s;
+        border: 1px solid green;
+        cursor: pointer;
+        filter: grayscale(50%);
+}
+
 .card-title {
         height: 80px;
 }
