@@ -1,3 +1,7 @@
+.course-section {
+        background-image: linear-gradient(rgb(253, 245, 234), rgb(255, 237, 214));
+}
+
 .see-more {
         text-decoration: underline;
         cursor: pointer;

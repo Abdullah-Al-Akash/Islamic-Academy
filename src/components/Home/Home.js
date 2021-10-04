@@ -18,20 +18,24 @@ const Home = () => {
                 <div>
 
                         <Header />
-                        <div className="container">
-                                <h2 className="text-center mt-5 text-success">Our Courses</h2>
-                                <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
-                                        {
-                                                courses.slice(0, 4).map(course => <Course
-                                                        course={course}
-                                                        key={course.id}
-                                                >
-                                                </Course>)
-                                        }
+                        <div class="course-section">
+                                <div className="container pt-5 pb-5">
+                                        <h1 style={{ 'textDecoration': 'underline' }} className="text-center mt-2 brand-color fw-bold">Our Courses</h1>
+                                        <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
+                                                {
+                                                        courses.slice(0, 4).map(course => <Course
+                                                                course={course}
+                                                                key={course.id}
+                                                        >
+                                                        </Course>)
+                                                }
+                                        </div>
+                                        <Link to="/courses">
+                                                <div className="text-center">
+                                                        <button type="button" className="btn brand-btn text-white fw-bold pt-2"><h4>See More Courses <i class="fas fa-arrow-right"></i></h4></button>
+                                                </div>
+                                        </Link>
                                 </div>
-                                <Link to="/courses">
-                                        <h3 className="text-center text-success pb-5 see-more">See More</h3>
-                                </Link>
                         </div>
                         {/* Added Contact Section */}
                         <Contact />

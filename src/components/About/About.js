@@ -9,7 +9,7 @@ const About = () => {
                                 <div className="row">
                                         <div className="col-lg-6 d-flex justify-content-center ps-5 mt-5 pt-5">
                                                 <div class="w-75">
-                                                        <h1 class="pt-2">About Us</h1>
+                                                        <h1 class="pt-2 fw-bold">About Us</h1>
                                                         <h3 class="brand-color mt-3">Islamic Academy For Muslims To Achieve Spiritual Goals</h3>
                                                         <p>Many historians claim that the earliest Muslims came from the Senegambian region of Africa in the early 14th century. It is believed they were Moors, expelled from Spain, who made their way to the Caribbean and possibly to the Gulf of Mexico.</p>
                                                 </div>

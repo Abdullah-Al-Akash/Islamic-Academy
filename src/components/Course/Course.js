@@ -13,11 +13,11 @@ const Course = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                                 <div className="card-body">
-                                                        <h5 className="card-title text-success">{title}</h5>
+                                                        <h5 className="card-title brand-light-color">{title}</h5>
                                                         <p>Certificate: {certificate}</p>
                                                         <div className="d-flex justify-content-between align-items-center">
                                                                 <h3>${price}</h3>
-                                                                <p className="pt-2"><i className="fas fa-clock text-success"></i> {duration}month</p>
+                                                                <p className="pt-2"><i className="fas fa-clock brand-light-color"></i> {duration}month</p>
                                                         </div>
                                                 </div>
                                         </div>
