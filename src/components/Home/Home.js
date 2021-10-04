@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Course from '../Course/Course';
 import Header from '../Header/Header';
 import './Home.css';
@@ -17,8 +18,8 @@ const Home = () => {
 
                         <Header />
                         <div className="container">
-                                <h2 class="text-center mt-5 text-success">Our Courses</h2>
-                                <div class="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
+                                <h2 className="text-center mt-5 text-success">Our Courses</h2>
+                                <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
                                         {
                                                 courses.slice(0, 4).map(course => <Course
                                                         course={course}
@@ -27,7 +28,9 @@ const Home = () => {
                                                 </Course>)
                                         }
                                 </div>
-                                <h3 class="text-center text-success pb-5 see-more">See More</h3>
+                                <Link to="/courses">
+                                        <h3 className="text-center text-success pb-5 see-more">See More</h3>
+                                </Link>
 
                         </div>
                 </div>
