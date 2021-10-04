@@ -16,6 +16,7 @@ const Courses = () => {
                                 <h1 className="text-center our-course brand-color fw-bold">Our Courses</h1>
                                 <h5 className="text-center brand-light-color">“Seek knowledge even if you have to go as far as China”</h5>
                                 <div className="mt-3 pb-5 row row-cols-1 row-cols-md-2 g-5 mx-auto">
+                                        {/* Map Data */}
                                         {
                                                 courses.map(course => <Course
                                                         course={course}

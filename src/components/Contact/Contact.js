@@ -13,6 +13,7 @@ const Contact = () => {
                                                 <img src={image} className="img-fluid p-3 mx-auto" alt="" />
                                         </div>
                                         <div className="col-lg-6 brand-light-color fw-bold">
+                                                {/* Form Section */}
                                                 <div className="w-75 mx-auto bg-dark p-3 rounded-3">
                                                         <div className="pt-3">
                                                                 <label className="form-label">Your Name</label>

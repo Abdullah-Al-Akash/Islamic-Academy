@@ -43,6 +43,7 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+              {/* For 404 Error */}
             </Route>
             <Route path="*">
               <NotFound />

@@ -18,6 +18,7 @@ const SingleScholar = (props) => {
                                         <h3 className="card-title">{name}</h3>
                                         <h5>Title: {trainer}</h5>
                                 </div>
+                                {/* Social Icon */}
                                 <div className="social-icon pb-5">
                                         <img src={facebook} width="35px" height="35px" className="mx-auto ms-2" alt="..." />
                                         <img src={twt} width="35px" height="35px" className="mx-auto ms-2" alt="..." />
