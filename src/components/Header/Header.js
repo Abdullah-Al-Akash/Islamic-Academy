@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import HeaderImage from '../images/bg.png';
+import HeaderImage from '../images/main2.gif';
 
 const Header = () => {
         return (
@@ -9,13 +9,13 @@ const Header = () => {
                                 <img className="img-fluid" src={HeaderImage} alt="" />
                         </div>
                         <div className="d-md-flex align-items-center">
-                                <div className="p-3 w-75">
-                                        <h2>
-                                                And Allah Invites To
-                                                The Home Of Peace
-                                        </h2>
-                                        <p class="text-success m-0 p-0 pt-5"><i class="fas fa-sun"></i> Sunrise At: 5:10 AM</p>
-                                        <p class="text-success m-0 p-0"><i class="fas fa-moon"></i> Sunset At: 6:00 PM</p>
+                                <div className="p-3">
+                                        <h1 class="text-success">
+                                                Islamic Academy
+                                        </h1>
+                                        <h4 class="slogan">To Learn Quran Properly and get Proper Meaning</h4>
+                                        <p className="text-success m-0 p-0 pt-5"><i className="fas fa-sun"></i> Sunrise At: 5:10 AM</p>
+                                        <p className="text-success m-0 p-0"><i className="fas fa-moon"></i> Sunset At: 6:00 PM</p>
                                 </div>
                         </div>
                 </div>

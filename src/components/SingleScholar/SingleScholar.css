@@ -1,0 +1,22 @@
+.social-icon img {
+        border-radius: 50%;
+}
+
+.social-icon img:hover {
+        cursor: pointer;
+}
+
+.scholar-card {
+        background-image: linear-gradient( rgb(221, 235, 194), rgb(142, 197, 64));
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-clip: fixed;
+}
+
+.scholar-card:hover {
+        transform: scale(1.04);
+        transition: transform 1s;
+        cursor: pointer;
+        background: gainsboro;
+}

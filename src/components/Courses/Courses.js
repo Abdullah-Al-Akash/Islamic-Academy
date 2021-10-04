@@ -13,7 +13,7 @@ const Courses = () => {
         return (
                 <div className="container">
                         <h1 className="text-center our-course">Our Courses</h1>
-                        <h5 class="text-center text-success">“Seek knowledge even if you have to go as far as China”</h5>
+                        <h5 className="text-center text-success">“Seek knowledge even if you have to go as far as China”</h5>
                         <div className="mt-3 pb-5 row row-cols-1 row-cols-md-2 g-5 mx-auto">
                                 {
                                         courses.map(course => <Course

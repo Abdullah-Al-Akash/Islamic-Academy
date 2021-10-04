@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
         return (
-                <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top mb-5">
+                <nav className="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
                         <div className="container">
                                 <Link to="/" className="navbar-brand">
                                         <h2>Islamic Academy</h2>
@@ -19,7 +19,7 @@ const Navbar = () => {
                                                                 to="/home"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "lightgray"
+                                                                        color: "pink"
                                                                 }} className="nav-link active"
                                                         >
                                                                 Home
@@ -30,7 +30,7 @@ const Navbar = () => {
                                                                 to="/courses"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "lightgray"
+                                                                        color: "pink"
                                                                 }} className="nav-link active"
                                                         >
                                                                 Courses
@@ -38,10 +38,21 @@ const Navbar = () => {
                                                 </li>
                                                 <li className="nav-item">
                                                         <NavLink
+                                                                to="/scholars"
+                                                                activeStyle={{
+                                                                        fontWeight: "bold",
+                                                                        color: "pink"
+                                                                }} className="nav-link active"
+                                                        >
+                                                                Our Scholars
+                                                        </NavLink>
+                                                </li>
+                                                <li className="nav-item">
+                                                        <NavLink
                                                                 to="/about"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "lightgray"
+                                                                        color: "pink"
                                                                 }} className="nav-link active"
                                                         >
                                                                 About Us

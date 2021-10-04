@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Courses from './components/Courses/Courses';
 import NotFound from './components/NotFound/NotFound';
+import Scholars from './components/Scholars/Scholars';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/courses">
             <Courses></Courses>
+          </Route>
+          <Route path="/scholars">
+            <Scholars />
           </Route>
           <Route path="*">
             <NotFound />
