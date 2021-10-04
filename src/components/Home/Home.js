@@ -8,7 +8,7 @@ import './Home.css';
 const Home = () => {
         // State Date: 
         const [courses, setCourses] = useState([]);
-
+        // Fetch Data From Database:
         useEffect(() => {
                 fetch('./fakedb.JSON')
                         .then(res => res.json())
@@ -16,12 +16,13 @@ const Home = () => {
         }, [])
         return (
                 <div>
-
+                        {/* Added Header Section */}
                         <Header />
                         <div className="course-section">
                                 <div className="container pt-5 pb-5">
                                         <h1 style={{ 'textDecoration': 'underline' }} className="text-center mt-2 brand-color fw-bold">Our Courses</h1>
                                         <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
+                                                {/* Using Map for show all Course */}
                                                 {
                                                         courses.slice(0, 4).map(course => <Course
                                                                 course={course}

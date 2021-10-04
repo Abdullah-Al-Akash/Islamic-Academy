@@ -59,6 +59,17 @@ const Navbar = () => {
                                                                 About Us
                                                         </NavLink>
                                                 </li>
+                                                <li className="nav-item">
+                                                        <NavLink
+                                                                to="/contact"
+                                                                activeStyle={{
+                                                                        fontWeight: "bold",
+                                                                        color: "rgb(211, 146, 62)"
+                                                                }} className="nav-link active"
+                                                        >
+                                                                Contact
+                                                        </NavLink>
+                                                </li>
                                         </ul>
                                 </div>
                         </div>
