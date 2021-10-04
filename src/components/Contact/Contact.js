@@ -14,20 +14,20 @@ const Contact = () => {
                                         </div>
                                         <div className="col-lg-6 brand-light-color fw-bold">
                                                 <div className="w-75 mx-auto bg-dark p-3 rounded-3">
-                                                        <div class="pt-3">
-                                                                <label for="exampleInputEmail1" class="form-label">Your Name</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                                        <div className="pt-3">
+                                                                <label className="form-label">Your Name</label>
+                                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                                         </div>
-                                                        <div class="">
-                                                                <label for="exampleInputEmail1" class="form-label">Your Email</label>
-                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                                        <div className="">
+                                                                <label className="form-label">Your Email</label>
+                                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                                         </div>
-                                                        <div class="mb-3">
-                                                                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        <div className="mb-3">
+                                                                <label className="form-label">Your Message</label>
+                                                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                         </div>
-                                                        <div class="d-grid gap-2 pb-4">
-                                                                <button type="submit" class="btn brand-btn text-white"><h5>Submit</h5></button>
+                                                        <div className="d-grid gap-2 pb-4">
+                                                                <button type="submit" className="btn brand-btn text-white"><h5>Submit</h5></button>
                                                         </div>
                                                 </div>
                                         </div>

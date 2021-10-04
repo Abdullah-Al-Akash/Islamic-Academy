@@ -18,7 +18,7 @@ const Home = () => {
                 <div>
 
                         <Header />
-                        <div class="course-section">
+                        <div className="course-section">
                                 <div className="container pt-5 pb-5">
                                         <h1 style={{ 'textDecoration': 'underline' }} className="text-center mt-2 brand-color fw-bold">Our Courses</h1>
                                         <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
@@ -32,7 +32,7 @@ const Home = () => {
                                         </div>
                                         <Link to="/courses">
                                                 <div className="text-center">
-                                                        <button type="button" className="btn brand-btn text-white fw-bold pt-2"><h4>See More Courses <i class="fas fa-arrow-right"></i></h4></button>
+                                                        <button type="button" className="btn brand-btn text-white fw-bold pt-2"><h4>See More Courses <i className="fas fa-arrow-right"></i></h4></button>
                                                 </div>
                                         </Link>
                                 </div>

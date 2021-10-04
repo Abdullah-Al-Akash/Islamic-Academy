@@ -26,10 +26,10 @@ const Footer = () => {
                                                                 7:00pm)</h6>
                                                 </div>
                                                 <div className="col-lg-3 mt-5 footer-text pt-5">
-                                                        <h6 class="ps-3">About Us</h6>
-                                                        <h6 class="ps-3">Refund Policy</h6>
-                                                        <h6 class="ps-3">Terms & Condition</h6>
-                                                        <h6 class="ps-3">Privacy Policy</h6>
+                                                        <h6 className="ps-3">About Us</h6>
+                                                        <h6 className="ps-3">Refund Policy</h6>
+                                                        <h6 className="ps-3">Terms & Condition</h6>
+                                                        <h6 className="ps-3">Privacy Policy</h6>
                                                 </div>
                                                 <div className="col-lg-4 mt-5">
                                                         <div>
@@ -38,9 +38,9 @@ const Footer = () => {
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="text-center pb-5">
-                                        <p class="p-0 m-0">Copyright © 2021 Islamic-academy.netlify.app</p>
-                                        <small>made by <span class="brand-light-color">Abdullah Al Akash</span></small>
+                                <div className="text-center pb-5">
+                                        <p className="p-0 m-0">Copyright © 2021 Islamic-academy.netlify.app</p>
+                                        <small>made by <span className="brand-light-color">Abdullah Al Akash</span></small>
                                 </div>
                         </footer >
                 </div>
