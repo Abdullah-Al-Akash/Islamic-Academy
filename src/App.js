@@ -6,8 +6,7 @@ import Footer from './components/Footer/Footer';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Courses from './components/Courses/Courses';
 import NotFound from './components/NotFound/NotFound';

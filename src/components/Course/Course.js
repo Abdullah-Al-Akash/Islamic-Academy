@@ -16,7 +16,7 @@ const Course = (props) => {
                                                         <h5 className="card-title brand-light-color">{title}</h5>
                                                         <p>Certificate: {certificate}</p>
                                                         <div className="d-flex justify-content-between align-items-center">
-                                                                <h3>${price}</h3>
+                                                                <h3 class="text-success">${price}</h3>
                                                                 <p className="pt-2"><i className="fas fa-clock brand-light-color"></i> {duration}month</p>
                                                         </div>
                                                 </div>
