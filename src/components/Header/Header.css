@@ -1,18 +1,31 @@
 .header {
-        margin-top: 3%;
+        margin-top: 5%;
         height: 90vh;
         width: 100%;
-        background-image: linear-gradient( rgb(221, 235, 194), rgb(142, 197, 64));
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        background-clip: fixed;
+        animation: animate 12s ease-in-out infinite;
+}
+
+@keyframes animate {
+        0%, 100% {
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ytimg.com/vi/8ng7NjERQhU/maxresdefault.jpg');
+        }
+        40% {
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://thenewsify.com/wp-content/uploads/2020/01/sheikh-zayed-grand-mosque-night-1280x720.jpg');
+        }
+        75% {
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://pixy.org/src2/590/thumbs350/5907902.jpg');
+        }
 }
 
 .head-title {
-        color: rgb(143, 112, 27);
+        color: rgb(248, 209, 103);
+        font-size: 4rem;
 }
 
 .slogan {
-        color: rgb(136, 135, 132)
+        color: rgb(223, 235, 194);
+        font-weight: 300;
 }
