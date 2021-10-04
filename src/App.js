@@ -12,6 +12,7 @@ import {
 import Courses from './components/Courses/Courses';
 import NotFound from './components/NotFound/NotFound';
 import Scholars from './components/Scholars/Scholars';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/scholars">
             <Scholars />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="*">
             <NotFound />

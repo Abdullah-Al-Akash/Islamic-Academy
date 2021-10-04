@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Contact from '../Contact/Contact';
 import Course from '../Course/Course';
 import Header from '../Header/Header';
 import './Home.css';
@@ -31,8 +32,9 @@ const Home = () => {
                                 <Link to="/courses">
                                         <h3 className="text-center text-success pb-5 see-more">See More</h3>
                                 </Link>
-
                         </div>
+                        {/* Added Contact Section */}
+                        <Contact />
                 </div>
         );
 };

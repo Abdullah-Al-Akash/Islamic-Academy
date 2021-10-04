@@ -1,0 +1,8 @@
+.about-section {
+        height: 600px;
+        background-image: url('../images/about-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css'
+import logo from '../images/logo.png';
 
 const Navbar = () => {
         return (
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
                         <div className="container">
-                                <Link to="/" className="navbar-brand">
-                                        <h2>Islamic Academy</h2>
+                                <Link to="/" className="m-0 p-0">
+                                        <img src={logo} height="60" alt="" />
                                 </Link>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
@@ -19,7 +20,7 @@ const Navbar = () => {
                                                                 to="/home"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "pink"
+                                                                        color: "rgb(211, 146, 62)"
                                                                 }} className="nav-link active"
                                                         >
                                                                 Home
@@ -30,7 +31,7 @@ const Navbar = () => {
                                                                 to="/courses"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "pink"
+                                                                        color: "rgb(211, 146, 62)"
                                                                 }} className="nav-link active"
                                                         >
                                                                 Courses
@@ -41,7 +42,7 @@ const Navbar = () => {
                                                                 to="/scholars"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "pink"
+                                                                        color: "rgb(211, 146, 62)"
                                                                 }} className="nav-link active"
                                                         >
                                                                 Our Scholars
@@ -52,7 +53,7 @@ const Navbar = () => {
                                                                 to="/about"
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
-                                                                        color: "pink"
+                                                                        color: "rgb(211, 146, 62)"
                                                                 }} className="nav-link active"
                                                         >
                                                                 About Us

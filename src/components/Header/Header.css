@@ -9,6 +9,10 @@
         background-clip: fixed;
 }
 
+.head-title {
+        color: rgb(143, 112, 27);
+}
+
 .slogan {
-        color: rgb(255, 253, 249)
+        color: rgb(136, 135, 132)
 }
