@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
@@ -13,37 +12,45 @@ import NotFound from './components/NotFound/NotFound';
 import Scholars from './components/Scholars/Scholars';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import { createContext } from 'react';
+
+// Context API:
+export const TrainerContext = createContext('trainer');
 
 function App() {
+  const trainer = 'Trainer';
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/courses">
-            <Courses></Courses>
-          </Route>
-          <Route path="/scholars">
-            <Scholars />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
+      {/* Setup Routing */}
+      <TrainerContext.Provider value={trainer}>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/courses">
+              <Courses></Courses>
+            </Route>
+            <Route path="/scholars">
+              <Scholars />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </TrainerContext.Provider>
     </div>
   );
 }
