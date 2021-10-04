@@ -7,7 +7,7 @@ const Header = () => {
                 <div>
                         <div className="header d-md-flex justify-content-center align-items-center">
                                 <div className="p-3">
-                                        <h1 className="text-white text-center pt-3 pb-5">بِسْمِ ٱللّٰهِ ٱلرَّحْمٰنِ ٱلرَّحِيمِ</h1>
+                                        <h1 className="text-white text-center pb-5">بِسْمِ ٱللّٰهِ ٱلرَّحْمٰنِ ٱلرَّحِيمِ</h1>
                                         <h1 className="head-title">
                                                 Islamic Academy
                                         </h1>
