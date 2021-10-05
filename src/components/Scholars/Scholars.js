@@ -19,11 +19,13 @@ const Scholars = () => {
                                 <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
                                         {/* Map Data */}
                                         {
-                                                scholars.map(scholar => <SingleScholar
-                                                        key={scholar.id}
-                                                        scholar={scholar}
-                                                >
-                                                </SingleScholar>)
+                                                scholars.length === 0 ? <img className="img-fluid w-25 rounded-3 mx-auto" src="https://trails.ca/wp-content/uploads/2020/10/loading-spinner.gif" alt="" />
+                                                        :
+                                                        scholars.map(scholar => <SingleScholar
+                                                                key={scholar.id}
+                                                                scholar={scholar}
+                                                        >
+                                                        </SingleScholar>)
                                         }
                                 </div>
                         </div>

@@ -24,11 +24,13 @@ const Home = () => {
                                         <div className="mt-5 pb-5 row row-cols-1 row-cols-md-2 g-3 mx-auto">
                                                 {/* Using Map for show all Course */}
                                                 {
-                                                        courses.slice(0, 4).map(course => <Course
-                                                                course={course}
-                                                                key={course.id}
-                                                        >
-                                                        </Course>)
+                                                        courses.length === 0 ? <img className="img-fluid w-25 rounded-3 mx-auto" src="https://trails.ca/wp-content/uploads/2020/10/loading-spinner.gif" alt="" />
+                                                                :
+                                                                courses.slice(0, 4).map(course => <Course
+                                                                        course={course}
+                                                                        key={course.id}
+                                                                >
+                                                                </Course>)
                                                 }
                                         </div>
                                         <Link to="/courses">

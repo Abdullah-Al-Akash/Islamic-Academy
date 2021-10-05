@@ -18,11 +18,15 @@ const Courses = () => {
                                 <div className="mt-3 pb-5 row row-cols-1 row-cols-md-2 g-5 mx-auto">
                                         {/* Map Data */}
                                         {
-                                                courses.map(course => <Course
-                                                        course={course}
-                                                        key={course.id}
-                                                >
-                                                </Course>)
+                                                courses.length === 0 ?
+                                                        <img className="img-fluid w-25 rounded-3 mx-auto" src="https://trails.ca/wp-content/uploads/2020/10/loading-spinner.gif" alt="" />
+                                                        :
+                                                        courses.map(course => <Course
+                                                                course={course}
+                                                                key={course.id}
+                                                        >
+                                                        </Course>)
+
                                         }
                                 </div>
                         </div>
