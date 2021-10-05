@@ -5,18 +5,18 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        animation: animate 12s ease-in-out infinite;
+        animation: animate 12s ease-in infinite;
 }
 
 @keyframes animate {
         0%, 100% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ytimg.com/vi/8ng7NjERQhU/maxresdefault.jpg');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/C7RJfL5/bg1.png');
         }
         40% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://thenewsify.com/wp-content/uploads/2020/01/sheikh-zayed-grand-mosque-night-1280x720.jpg');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/gtrhZYk/bg2.png');
         }
         75% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://pixy.org/src2/590/thumbs350/5907902.jpg');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/hDqyw3M/bg3.png');
         }
 }
 
