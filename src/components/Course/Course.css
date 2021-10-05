@@ -10,9 +10,8 @@
 .course-card:hover {
         transform: scale(1.03);
         transition: transform 1s;
-        border: 1px solid green;
+        border: 1px solid rgb(253, 153, 22);
         cursor: pointer;
-        filter: grayscale(50%);
 }
 
 .card-title {

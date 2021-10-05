@@ -13,6 +13,7 @@ import Scholars from './components/Scholars/Scholars';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import { createContext } from 'react';
+import Admit from './components/Admit/Admit';
 
 // Context API:
 export const TrainerContext = createContext('trainer');
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/courses">
               <Courses></Courses>
+            </Route>
+            <Route path="/course/:courseId">
+              <Admit />
             </Route>
             <Route path="/scholars">
               <Scholars />
