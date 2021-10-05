@@ -6,7 +6,7 @@
 <h5>Actually This is a educational website where someone can get--</h5>
 <ul>
         <li>
-                Islamic Education Courses which helps a man/women to know proper essentials.
+                Islamic Education Courses which helps a man/women to know proper essentials course.
         </li>
         <li>
                 As I have used routing so easily anyone can move one page from another page by using navigation.

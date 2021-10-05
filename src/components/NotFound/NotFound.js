@@ -11,7 +11,7 @@ const NotFound = () => {
                         </div>
                         {/* For Home Page */}
                         <Link to="/home">
-                                <button className="btn brand-btn mt-5 pt-2"><h4><i className="fas fa-arrow-left"></i> Back To Home</h4></button>
+                                <button className="btn brand-btn mt-5 pt-2 fw-bold"><i className="fas fa-arrow-left"></i> Back To Home</button>
 
                         </Link>
                 </div>

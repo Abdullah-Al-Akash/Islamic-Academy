@@ -3,6 +3,9 @@ import './Footer.css';
 import card from '../images/card.png';
 import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
+import facebook from '../images/icon/facebook.png';
+import twt from '../images/icon/twt.png';
+import youtube from '../images/icon/youtube.png';
 
 const Footer = () => {
         return (
@@ -24,6 +27,11 @@ const Footer = () => {
                                                         <h6 className="ps-3"><i className="fas fa-info-circle"></i> Helpline : +878545454545 (Available :
                                                                 09:00am to
                                                                 7:00pm)</h6>
+                                                        <div className="social-icon pb-5 pt-3">
+                                                                <img src={facebook} width="30px" height="30px" className="mx-auto ms-3" alt="..." />
+                                                                <img src={twt} width="30px" height="30px" className="mx-auto ms-3" alt="..." />
+                                                                <img src={youtube} width="30px" height="30px" className="mx-auto ms-3" alt="..." />
+                                                        </div>
                                                 </div>
                                                 <div className="col-lg-3 mt-5 footer-text pt-5">
                                                         <h6 className="ps-3">About Us</h6>

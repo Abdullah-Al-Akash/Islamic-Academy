@@ -33,7 +33,7 @@ const Home = () => {
                                         </div>
                                         <Link to="/courses">
                                                 <div className="text-center">
-                                                        <button type="button" className="btn brand-btn text-white fw-bold pt-2">See More Courses <i className="fas fa-arrow-right"></i></button>
+                                                        <button type="button" className="btn brand-btn text-white fw-bold pt-2 see-more-btn">See More Courses <i className="fas fa-arrow-right"></i></button>
                                                 </div>
                                         </Link>
                                 </div>

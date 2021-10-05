@@ -15,8 +15,8 @@ const SingleScholar = (props) => {
                         <div className="card h-100 text-center scholar-card">
                                 <img src={img} width="200px" height="200px" className="rounded-circle border border-3 border-dark mx-auto mt-5" alt="..." />
                                 <div className="card-body mt-2">
-                                        <h3 className="card-title">{name}</h3>
-                                        <h5>Title: {trainer}</h5>
+                                        <h3 className="card-title fw-bold">{name}</h3>
+                                        <h5>Title: <span className="fw-bold">{trainer}</span></h5>
                                 </div>
                                 {/* Social Icon */}
                                 <div className="social-icon pb-5">
