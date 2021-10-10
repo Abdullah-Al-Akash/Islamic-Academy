@@ -1,7 +1,9 @@
 import React from 'react';
+import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
+        const { signInUsingGoogle } = useAuth();
         return (
                 <div className="login container">
                         <div className="row pb-5">
@@ -26,7 +28,7 @@ const Login = () => {
                                                 </div>
                                                 <h6 class="text-center text-white m-0 p-0">Or</h6>
                                                 <div className="d-grid gap-2 mb-3">
-                                                        <button type="submit" className="btn btn-light btn-lg fw-bold">
+                                                        <button onClick={signInUsingGoogle} type="submit" className="btn btn-light btn-lg fw-bold">
                                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" className="img-fluid me-3" height="27px" width="27px" alt="" />
                                                                 Sign In Using Google <i class="fas fa-sign-in-alt"></i></button>
                                                 </div>

@@ -2,8 +2,12 @@ import React from 'react';
 import { Link, NavLink, useHistory } from 'react-router-dom';
 import './Navbar.css'
 import logo from '../images/logo.png';
+import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
+        // Call useFirebase Function:
+        const { user, logOut } = useAuth();
+        // useHistory For Push Route:
         const history = useHistory();
         const login = () => {
                 history.push('/login')
@@ -69,14 +73,32 @@ const Navbar = () => {
                                                                 activeStyle={{
                                                                         fontWeight: "bold",
                                                                         color: "rgb(211, 146, 62)"
-                                                                }} className="nav-link active"
+                                                                }} className="nav-link active me-2"
                                                         >
                                                                 Contact
                                                         </NavLink>
                                                 </li>
-                                                <li className="nav-item">
-                                                        <button onClick={login} className="brand-btn btn fw-bolder">Login</button>
-                                                </li>
+                                                {
+                                                        user?.email &&
+                                                        <li className="nav-item">
+                                                                <img src={user.photoURL} className="rounded-circle img-fluid me-2" height="40px" width="40px" />
+                                                        </li>
+                                                }
+                                                {
+                                                        user?.email ?
+                                                                <li className="nav-item">
+                                                                        <button onClick={logOut} className="brand-btn btn fw-bolder">Logout
+                                                                                <i class="ms-1 fas fa-sign-out-alt"></i>
+                                                                        </button>
+                                                                </li>
+                                                                :
+                                                                <li className="nav-item">
+                                                                        <button onClick={login} className="brand-btn btn fw-bolder">Login
+                                                                                <i class="fas fa-sign-in-alt ms-1"></i>
+                                                                        </button>
+                                                                </li>
+
+                                                }
                                         </ul>
                                 </div>
                         </div>
