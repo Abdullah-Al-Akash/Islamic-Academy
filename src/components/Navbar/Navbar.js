@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import './Navbar.css'
 import logo from '../images/logo.png';
 
 const Navbar = () => {
+        const history = useHistory();
+        const login = () => {
+                history.push('/login')
+        }
         return (
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
                         <div className="container">
@@ -69,6 +73,9 @@ const Navbar = () => {
                                                         >
                                                                 Contact
                                                         </NavLink>
+                                                </li>
+                                                <li className="nav-item">
+                                                        <button onClick={login} className="brand-btn btn fw-bolder">Login</button>
                                                 </li>
                                         </ul>
                                 </div>

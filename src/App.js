@@ -14,6 +14,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import { createContext } from 'react';
 import Admit from './components/Admit/Admit';
+import Login from './components/Login/Login';
 
 // Context API:
 export const TrainerContext = createContext('trainer');
@@ -47,8 +48,11 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
-              {/* For 404 Error */}
             </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            {/* For 404 Error */}
             <Route path="*">
               <NotFound />
             </Route>
