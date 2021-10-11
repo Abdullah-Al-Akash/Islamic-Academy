@@ -16,6 +16,7 @@ import { createContext } from 'react';
 import Admit from './components/Admit/Admit';
 import Login from './components/Login/Login';
 import AuthProvider from './components/Context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 // Context API:
 export const TrainerContext = createContext('trainer');
@@ -39,9 +40,9 @@ function App() {
               <Route path="/courses">
                 <Courses></Courses>
               </Route>
-              <Route path="/course/:courseId">
+              <PrivateRoute path="/course/:courseId">
                 <Admit />
-              </Route>
+              </PrivateRoute>
               <Route path="/scholars">
                 <Scholars />
               </Route>

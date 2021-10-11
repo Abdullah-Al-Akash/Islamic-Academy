@@ -81,20 +81,20 @@ const Navbar = () => {
                                                 {
                                                         user?.email &&
                                                         <li className="nav-item">
-                                                                <img src={user.photoURL} className="rounded-circle img-fluid me-2" height="40px" width="40px" />
+                                                                <img src={user.photoURL} className="rounded-circle img-fluid me-2" height="40px" width="40px" alt="" />
                                                         </li>
                                                 }
                                                 {
                                                         user?.email ?
                                                                 <li className="nav-item">
                                                                         <button onClick={logOut} className="brand-btn btn fw-bolder">Logout
-                                                                                <i class="ms-1 fas fa-sign-out-alt"></i>
+                                                                                <i className="ms-1 fas fa-sign-out-alt"></i>
                                                                         </button>
                                                                 </li>
                                                                 :
                                                                 <li className="nav-item">
                                                                         <button onClick={login} className="brand-btn btn fw-bolder">Login
-                                                                                <i class="fas fa-sign-in-alt ms-1"></i>
+                                                                                <i className="fas fa-sign-in-alt ms-1"></i>
                                                                         </button>
                                                                 </li>
 

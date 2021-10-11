@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 import './Admit.css';
 
 const Admit = () => {
+        const { user } = useAuth();
         // Catch Course Id by using useParams:
         const { courseId } = useParams()
         // Declare State:
@@ -53,7 +55,8 @@ const Admit = () => {
                                 <div className="col fw-bold brand-light-color">
                                         {/* Form Section */}
                                         <div className="mx-auto bg-dark p-3 rounded-3">
-                                                <h5 className="text-center text-white fw-bolder pb-3">Course Name: {admitCourse?.title}</h5>
+                                                <h5 className="text-center text-white fw-bolder">Course Name: {admitCourse?.title}</h5>
+                                                <h3 className="text-center fw-bolder pb-3">Course Amount: ${admitCourse?.price}</h3>
                                                 <fieldset disabled>
                                                         <div className="">
                                                                 <label className="form-label">Student ID</label>
